@@ -1,4 +1,4 @@
-package weixin_corp.message.builder;
+package weixin_corp.message.util;
 
 public class VideoMessageContentBuilder implements IMessageContentBuilder{
 	
@@ -6,6 +6,7 @@ public class VideoMessageContentBuilder implements IMessageContentBuilder{
 	private String mediaId;
 	private String title;
 	private String description;
+	private int safe=0;
 
 	@Override
 	public String getMsgType() {
@@ -35,6 +36,14 @@ public class VideoMessageContentBuilder implements IMessageContentBuilder{
 
 	public void setMediaId(String mediaId) {
 		this.mediaId = mediaId;
+	}
+
+	public int getSafe() {
+		return safe;
+	}
+
+	public void setSafe(int safe) {
+		this.safe = safe;
 	}
 	
 	

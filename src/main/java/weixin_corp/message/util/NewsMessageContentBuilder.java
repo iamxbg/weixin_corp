@@ -1,4 +1,4 @@
-package weixin_corp.message.builder;
+package weixin_corp.message.util;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package weixin_corp.message.builder;
+package weixin_corp.message.util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +11,8 @@ public class MPNewsMessageContentBuilder implements IMessageContentBuilder{
 	
 	private List<MPNewsArticle> articles=new ArrayList<>();
 
+	private int safe=0;
+	
 	@Override
 	public String getMsgType() {
 		// TODO Auto-generated method stub
@@ -25,6 +27,21 @@ public class MPNewsMessageContentBuilder implements IMessageContentBuilder{
 
 	public List<MPNewsArticle> getArticles() {
 		return articles;
+	}
+
+
+	public int getSafe() {
+		return safe;
+	}
+
+
+	public void setSafe(int safe) {
+		this.safe = safe;
+	}
+
+
+	public void setArticles(List<MPNewsArticle> articles) {
+		this.articles = articles;
 	}
 	
 	

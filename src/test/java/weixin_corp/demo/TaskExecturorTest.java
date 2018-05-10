@@ -1,4 +1,4 @@
-package weixin_corp.config;
+package weixin_corp.demo;
 
 import java.util.Date;
 import java.util.concurrent.Callable;
@@ -16,9 +16,11 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.util.concurrent.ListenableFuture;
 
+import weixin_corp.config.RootConfig;
+
 @ContextConfiguration(classes= {RootConfig.class})
 @RunWith(SpringJUnit4ClassRunner.class)
-public class ExecturorTest {
+public class TaskExecturorTest {
 
 	
 	@Test
@@ -72,9 +74,6 @@ public class ExecturorTest {
 			}*/
 			
 
-		
-		System.out.println("pool-size:"+taskExecutor.getPoolSize());
-		
 		
 	}
 }

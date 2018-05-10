@@ -1,4 +1,4 @@
-package weixin_corp.message.builder;
+package weixin_corp.message.util;
 
 public class VoiceMessageContentBuilder implements IMessageContentBuilder{
 

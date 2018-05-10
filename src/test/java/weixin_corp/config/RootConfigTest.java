@@ -45,12 +45,5 @@ public class RootConfigTest {
 		Assert.assertNotNull(sf);
 	}
 	
-	
-	@Test 
-	public void testScheduler() {
-		//TaskExecutor
-		ExecutorService
-	}
 
-	
 }
