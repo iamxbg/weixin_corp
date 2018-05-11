@@ -7,12 +7,28 @@ public class WeiXinMessageUtil {
 	
 	public static String parseListToStr(List<String> list) {
 		
+		String result="";
+		
 		assert list != null;
 		StringBuilder sb=new StringBuilder();
 			for(String s:list) {
-				sb.append(s).append("|");
+				System.out.println(">>> "+s);
+				sb=sb.append(s);
+				sb=sb.append("|");
 			}
-		return sb.replace(sb.length()-1, sb.length(), "").toString();
+			//System.out.print(sb.toString()+" "+sb.length());
+			
+			if(sb.length()>0) {
+				result= sb.replace(sb.length()-1, sb.length(), "").toString();
+			}
+			
+			System.out.println("result:"+result);
+			return result;
+			
+			
+			
+			
+			
 		
 	}
 	

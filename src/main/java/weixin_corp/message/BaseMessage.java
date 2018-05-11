@@ -1,9 +1,13 @@
 package weixin_corp.message;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 abstract class BaseMessage {
-		
+	@JsonProperty
 	private String touser;
+	@JsonProperty
 	private String toparty;
+	@JsonProperty
 	private String totag;
 	String msgtype;
 	private int agentid;

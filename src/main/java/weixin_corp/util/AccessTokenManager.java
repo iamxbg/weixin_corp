@@ -7,7 +7,14 @@ import weixin_corp.entity.AccessToken;
 public interface AccessTokenManager {
 
 	
-	AccessToken getAccessToken(int appId);
+	public AccessToken getAccessToken(int appId);
+	
+	/**
+	 * request a new access token with appID
+	 * @param appId
+	 * @return
+	 */
+	public AccessToken requestNewAccessToken(int appId) ;
 	
 	SecretManager getSecretManager();
 }

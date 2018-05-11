@@ -31,7 +31,6 @@ public class JacksonTest {
 		
 		WeiXinMessageAppInfo info=new WeiXinMessageAppInfo();
 				info.setAgentId(3);
-				info.setSafe(1);
 				info.setToParty("MusicBand","ComicFans");
 				info.setToTag("comic","music");
 				info.setToUser("wilson","billy","jack");

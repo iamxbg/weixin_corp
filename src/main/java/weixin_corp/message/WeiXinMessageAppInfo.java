@@ -8,7 +8,6 @@ public class WeiXinMessageAppInfo {
 	private List<String> toUser=new ArrayList<>();
 	private List<String> toParty=new ArrayList<>();
 	private List<String> toTag=new ArrayList<>();
-	private int safe;
 	private int agentId;
 	private String msgType;
 	
@@ -35,12 +34,7 @@ public class WeiXinMessageAppInfo {
 		for(String tag:toTag)
 		this.toTag.add(tag);
 	}
-	public int getSafe() {
-		return safe;
-	}
-	public void setSafe(int safe) {
-		this.safe = safe;
-	}
+
 
 	public String getMsgType() {
 		return msgType;

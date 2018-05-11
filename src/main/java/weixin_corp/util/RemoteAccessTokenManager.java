@@ -25,16 +25,21 @@ public class RemoteAccessTokenManager extends AbstractAccessTokenManager{
 		return null;
 	}
 
-	@Override
-	public AccessTokenManager createAccessTokenManager() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	
 	
 	@Override
-	AccessToken requestAccessToken(int appId) {
+	public
+	AccessToken requestNewAccessToken(int appId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+
+	@Override
+	public AccessTokenManager createAccessTokenManager(SecretManager sManager) {
 		// TODO Auto-generated method stub
 		return null;
 	}

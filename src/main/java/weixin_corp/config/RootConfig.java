@@ -15,7 +15,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 
 @Configuration
-@ComponentScan(basePackages= {"weixin_company_message_broker"},excludeFilters= {@Filter(type=FilterType.ANNOTATION,value=Configuration.class)})
+@ComponentScan(basePackages= {"weixin_corp"},excludeFilters= {@Filter(type=FilterType.ANNOTATION,value=Configuration.class)})
 @ImportResource(locations="classpath:applicationContext.xml")
 public class RootConfig {
 

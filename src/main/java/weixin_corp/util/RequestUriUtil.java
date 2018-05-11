@@ -10,10 +10,10 @@ public class RequestUriUtil {
 		for(String key:params.keySet()) {
 			if(!uriTemplate.contains(key.toUpperCase())) {
 				//log error
+				return null;
 			}
-			uriTemplate.replace(key.toUpperCase(), params.get(key));
+			uriTemplate=uriTemplate.replace(key.toUpperCase(), params.get(key));
 		}
-		
 		return uriTemplate;
 	}
 	

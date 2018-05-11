@@ -7,8 +7,9 @@ import org.apache.http.client.ClientProtocolException;
 import org.springframework.util.concurrent.ListenableFuture;
 
 import weixin_corp.message.IWeiXinMessage;
+import weixin_corp.message.MessageResponse;
 
 public interface IPushMessageService {
 	
-	ListenableFuture<Map<String, Object>> push(String url,IWeiXinMessage message) throws ClientProtocolException, IOException;
+	MessageResponse push(String url,IWeiXinMessage message) throws ClientProtocolException, IOException;
 }

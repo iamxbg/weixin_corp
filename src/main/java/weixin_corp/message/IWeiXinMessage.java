@@ -1,5 +1,8 @@
 package weixin_corp.message;
 
-public interface IWeiXinMessage {
+import java.io.Serializable;
 
+public interface IWeiXinMessage extends Serializable{
+	
+	public String getMsgtype();
 }
