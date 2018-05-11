@@ -15,9 +15,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import weixin_corp.config.RootConfig;
 import weixin_corp.message.IWeiXinMessage;
 import weixin_corp.message.NewsArticle;
-import weixin_corp.message.NewsMessage;
 import weixin_corp.message.WeiXinMessageAppInfo;
 import weixin_corp.message.WeiXinMessageFactory;
+import weixin_corp.message.type.NewsMessage;
 import weixin_corp.message.util.NewsMessageContentBuilder;
 import weixin_corp.message.util.TextMessageContentBuilder;
 

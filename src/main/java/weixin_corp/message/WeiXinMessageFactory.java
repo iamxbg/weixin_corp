@@ -8,7 +8,16 @@ import weixin_corp.message.util.NewsMessageContentBuilder;
 import weixin_corp.message.util.TextCardMessageContentBuilder;
 import weixin_corp.message.util.TextMessageContentBuilder;
 import weixin_corp.message.util.VideoMessageContentBuilder;
-import static weixin_corp.message.util.WeiXinMessageUtil.*;
+
+import static weixin_corp.message.WeiXinMessageUtil.*;
+
+import weixin_corp.message.type.FileMessage;
+import weixin_corp.message.type.ImageMessage;
+import weixin_corp.message.type.MPNewsMessage;
+import weixin_corp.message.type.NewsMessage;
+import weixin_corp.message.type.TextMessage;
+import weixin_corp.message.type.TextcardMessage;
+import weixin_corp.message.type.VideoMessage;
 
 public  class  WeiXinMessageFactory {
 

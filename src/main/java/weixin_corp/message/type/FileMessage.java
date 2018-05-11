@@ -1,7 +1,10 @@
-package weixin_corp.message;
+package weixin_corp.message.type;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import weixin_corp.message.BaseMessage;
+import weixin_corp.message.IWeiXinMessage;
 
 public class FileMessage extends BaseMessage implements IWeiXinMessage{
 

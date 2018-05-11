@@ -1,7 +1,11 @@
-package weixin_corp.message;
+package weixin_corp.message.type;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import weixin_corp.message.BaseMessage;
+import weixin_corp.message.IWeiXinMessage;
+import weixin_corp.message.MPNewsArticle;
 
 public class MPNewsMessage extends BaseMessage implements IWeiXinMessage{
 	

@@ -1,0 +1,26 @@
+drop table if exists meta_secret_type_t;
+drop table if exists secret_t;
+
+create table meta_secret_type_t(
+	id smallint not null,
+	type varchar(20) not null,
+	primary key(id)
+);
+
+create table secret_t(
+	id int not null,
+	secret_type smallint not null,
+	secret_value varchar(200) not null,
+	primary key(id),
+	constraint foreign key(secret_type) REFERENCES meta_secret_type_t(id)
+);
+
+drop table if exists app_info_t;
+create table app_info_t(
+	id int not null auto_increment,
+	`name` varchar(20) not null unique,
+	agent_id int not null,
+	secret varchar(200) not null,
+	primary key(id)
+)
+

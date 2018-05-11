@@ -1,8 +1,10 @@
-package weixin_corp.message;
+package weixin_corp.message.type;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import weixin_corp.message.BaseMessage;
+import weixin_corp.message.IWeiXinMessage;
 import weixin_corp.message.util.TextCardMessageContentBuilder;
 
 public class TextcardMessage extends BaseMessage implements IWeiXinMessage{
